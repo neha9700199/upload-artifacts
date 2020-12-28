@@ -34,6 +34,7 @@ jobs:
           echo test, and deploy your project.
   upload:
     runs-on: ubuntu-latest
+    needs: [build]
     steps:
       - shell: bash
         run: |
